@@ -59,7 +59,7 @@ class PropertyController extends Controller
             foreach ($request->file('images') as $image) {
                 $url = $image->store('public/images');
                 $property->images()->create([
-                    'url' => $url,
+                    'url' =>  $url,
                 ]);
             }
         }
